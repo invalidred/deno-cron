@@ -1,5 +1,6 @@
 {
   "imports": {
+    "croner": "jsr:@hexagon/croner@^9.0.0"
   },
   "tasks": {
     "dev": "deno run --watch main.ts"

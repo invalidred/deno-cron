@@ -1,10 +1,9 @@
-import { CronJob } from "npm:cron";
+import { Cron } from "croner";
 
-const cron = CronJob.from({
-  cronTime: "*/5 * * * * *",
-  onTick: function () {
-    console.log(`Hello World!!! ${new Date()}`);
-  },
-});
+function startCron() {
+  return new Cron('*/5 * * * * *', () => {
+    console.log('This will run every fifth second', new Date());
+  });
+}
 
-cron.start();
+startCron();

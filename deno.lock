@@ -1,7 +1,13 @@
 {
   "version": "4",
   "specifiers": {
+    "jsr:@hexagon/croner@9": "9.0.0",
     "npm:cron@*": "3.2.1"
+  },
+  "jsr": {
+    "@hexagon/croner@9.0.0": {
+      "integrity": "15713563b07001cdb8a2096d9e2bc866382848f8d29fdc15d7b16dc95d17b620"
+    }
   },
   "npm": {
     "@types/luxon@3.4.2": {
@@ -17,5 +23,10 @@
     "luxon@3.5.0": {
       "integrity": "sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ=="
     }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@hexagon/croner@9"
+    ]
   }
 }
