@@ -1,9 +1,11 @@
-import { Cron } from "croner";
+import { delay } from '@std/async';
 
 function startCron() {
-  return new Cron('*/5 * * * * *', () => {
-    console.log('This will run every fifth second', new Date());
-  });
+  console.log('This will run every fifth second', new Date());
 }
 
-startCron();
+while (true) {
+  startCron();
+  await delay(5000)
+}
+

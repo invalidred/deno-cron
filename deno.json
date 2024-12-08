@@ -1,5 +1,6 @@
 {
   "imports": {
+    "@std/async": "jsr:@std/async@^1.0.9",
     "croner": "jsr:@hexagon/croner@^9.0.0"
   },
   "tasks": {
