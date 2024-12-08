@@ -5,5 +5,5 @@
   "tasks": {
     "dev": "deno run --watch main.ts"
   },
-  "nodeModulesDir": "auto"
+  "nodeModulesDir": "none"
 }
