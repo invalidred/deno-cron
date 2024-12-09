@@ -1,11 +1,3 @@
-import { delay } from '@std/async';
-
-function startCron() {
-  console.log('This will run every fifth second', new Date());
-}
-
-while (true) {
-  startCron();
-  await delay(5000)
-}
-
+Deno.cron("This is a test cron", "* * * * *", () => {
+  console.log("Running corn", new Date());
+});
